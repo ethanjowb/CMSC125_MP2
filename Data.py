@@ -5,7 +5,9 @@ class Data:
         self.burstTime = burstTime
         self.priority = priority
 
-
+    def __str__(self):
+        headline = "process\t\tarrival\t\tburstTime\t\tpriority\n"
+        return headline + str(self.process) + "\t\t" + str(self.arrival) + "\t\t" + str(self.burstTime) + "\t\t\t" + str(self.priority) + "\n"
 class DataList:
     def __init__(self):
         self.dataList = []
